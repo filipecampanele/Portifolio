@@ -4,8 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Filipe Jação Campanele, desenvolvedor front-end com experiência em HTML, CSS, JavaScript e React, além de Git, GitHub e SQL.">
+    <meta name="theme-color" content="#090d17">
 
-    <title>Portfólio | Filipe Jação Campanele </title>
+    <title>Portfólio | Filipe Jação Campanele</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="Portifólio.css">
@@ -26,7 +35,7 @@
                 <span>&lt;</span>Dev<span>/&gt;</span>
             </a>
 
-            <button class="menu-button" id="menuButton">
+            <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">
                 <i class="bi bi-list"></i>
             </button>
 
@@ -47,6 +56,9 @@
 
         <!-- INÍCIO -->
         <section class="hero" id="inicio">
+
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
 
             <div class="hero-container">
 
@@ -83,11 +95,11 @@
 
                     <div class="social-links">
 
-                        <a href="https://github.com/filipecampanele?tab=repositories" target="_blank">
+                        <a href="https://github.com/filipecampanele?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <i class="bi bi-github"></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/filipe-campanele-176061417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                        <a href="https://www.linkedin.com/in/filipe-campanele-176061417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class="bi bi-linkedin"></i>
                         </a>
 
@@ -100,8 +112,7 @@
 
                     <div class="profile-circle">
 
-                        
-                        <img src="eu.jpg" alt="Foto de Seu Nome">
+                        <img src="eu.jpg" alt="Foto de Filipe Jação Campanele">
 
                     </div>
 
@@ -130,7 +141,7 @@
                     <div class="about-text">
 
                         <p>
-                            Meu nome é <strong>Filipe Jação Campanele </strong>, tenho
+                            Meu nome é <strong>Filipe Jação Campanele</strong>, tenho
                             <strong>27 anos</strong> e atualmente moro no
                             <strong>Brasil</strong>. Sou estudante de programação e tenho interesse
                             em desenvolvimento de software, tecnologia e
@@ -138,21 +149,24 @@
                         </p>
 
                         <p>
-                                Tenho experiência prática através da criação de projetos próprios e desafios de programação, utilizando <strong> HTML </strong> , <strong>CSS</strong>  e <strong>JavaScript</strong>, além de ferramentas como Git e GitHub para versionamento e organização dos meus projetos.
-
-                          
+                            Tenho experiência prática através da criação de projetos próprios e desafios de
+                            programação, utilizando <strong>HTML</strong>, <strong>CSS</strong> e
+                            <strong>JavaScript</strong>, além de ferramentas como <strong>Git</strong> e
+                            <strong>GitHub</strong> para versionamento e organização dos meus projetos.
                         </p>
 
                         <p>
-                            Atualmente, estou aprofundando meus conhecimentos em JavaScript, buscando desenvolver cada vez mais minha capacidade de resolver problemas, criar aplicações funcionais e transformar ideias em projetos reais.
-                       
+                            Atualmente, estou aprofundando meus conhecimentos em <strong>React</strong> e
+                            <strong>SQL</strong>, buscando desenvolver cada vez mais minha capacidade de
+                            resolver problemas, criar aplicações funcionais e transformar ideias em projetos
+                            reais.
                         </p>
 
-                      <p>
-
-                       Meu objetivo é ingressar profissionalmente na área de tecnologia, continuar evoluindo como desenvolvedor e contribuir para projetos nos quais eu possa aplicar meus conhecimentos e aprender continuamente.
-                        
-                      </p>
+                        <p>
+                            Meu objetivo é ingressar profissionalmente na área de tecnologia, continuar
+                            evoluindo como desenvolvedor e contribuir para projetos nos quais eu possa
+                            aplicar meus conhecimentos e aprender continuamente.
+                        </p>
 
                     </div>
 
@@ -220,61 +234,91 @@
                     Habilidades
                 </h2>
 
+                <div class="skills-groups">
 
-                <div class="skills">
+                    <div class="skills-group">
 
-                    <div class="skill-card">
+                        <h3 class="skills-group-title">Front-end</h3>
 
-                        <i class="bi bi-filetype-html"></i>
+                        <div class="skills-list">
 
-                        <h3>HTML</h3>
+                            <div class="skill-row" style="--tech-color:#f16529; --tech-bg:rgba(241,101,41,0.12)">
+                                <span class="skill-icon"><i class="bi bi-filetype-html"></i></span>
+                                <div class="skill-info">
+                                    <h4>HTML</h4>
+                                    <p>Estruturação de páginas web utilizando HTML semântico.</p>
+                                </div>
+                            </div>
 
-                        <p>
-                            Estruturação de páginas web utilizando
-                            HTML semântico.
-                        </p>
+                            <div class="skill-row" style="--tech-color:#2965f1; --tech-bg:rgba(41,101,241,0.12)">
+                                <span class="skill-icon"><i class="bi bi-filetype-css"></i></span>
+                                <div class="skill-info">
+                                    <h4>CSS</h4>
+                                    <p>Criação de interfaces responsivas, modernas e organizadas.</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-row" style="--tech-color:#f0db4f; --tech-bg:rgba(240,219,79,0.12)">
+                                <span class="skill-icon"><i class="bi bi-filetype-js"></i></span>
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <p>Desenvolvimento de funcionalidades e interações para páginas web.</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-row" style="--tech-color:#61dafb; --tech-bg:rgba(97,218,251,0.12)">
+                                <span class="skill-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="2.2" fill="currentColor" />
+                                        <g fill="none" stroke="currentColor" stroke-width="1.4">
+                                            <ellipse cx="12" cy="12" rx="10" ry="4.2" />
+                                            <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)" />
+                                            <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <div class="skill-info">
+                                    <h4>React</h4>
+                                    <p>Construção de interfaces reativas com componentes reutilizáveis.</p>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
 
 
-                    <div class="skill-card">
+                    <div class="skills-group">
 
-                        <i class="bi bi-filetype-css"></i>
+                        <h3 class="skills-group-title">Ferramentas &amp; dados</h3>
 
-                        <h3>CSS</h3>
+                        <div class="skills-list">
 
-                        <p>
-                            Criação de interfaces responsivas,
-                            modernas e organizadas.
-                        </p>
+                            <div class="skill-row" style="--tech-color:#f05133; --tech-bg:rgba(240,81,51,0.12)">
+                                <span class="skill-icon"><i class="bi bi-git"></i></span>
+                                <div class="skill-info">
+                                    <h4>Git</h4>
+                                    <p>Controle de versão do código e histórico de alterações.</p>
+                                </div>
+                            </div>
 
-                    </div>
+                            <div class="skill-row" style="--tech-color:#e5e9f0; --tech-bg:rgba(229,233,240,0.12)">
+                                <span class="skill-icon"><i class="bi bi-github"></i></span>
+                                <div class="skill-info">
+                                    <h4>GitHub</h4>
+                                    <p>Hospedagem, organização e colaboração em repositórios de projetos.</p>
+                                </div>
+                            </div>
 
+                            <div class="skill-row" style="--tech-color:#14b8a6; --tech-bg:rgba(20,184,166,0.12)">
+                                <span class="skill-icon"><i class="bi bi-database"></i></span>
+                                <div class="skill-info">
+                                    <h4>SQL</h4>
+                                    <p>Consultas e manipulação de dados em bancos relacionais.</p>
+                                </div>
+                            </div>
 
-                    <div class="skill-card">
-
-                        <i class="bi bi-filetype-js"></i>
-
-                        <h3>JavaScript</h3>
-
-                        <p>
-                            Desenvolvimento de funcionalidades
-                            e interações para páginas web.
-                        </p>
-
-                    </div>
-
-
-                    <div class="skill-card">
-
-                        <i class="bi bi-git"></i>
-
-                        <h3>Git</h3>
-
-                        <p>
-                            Controle de versão e organização
-                            de projetos.
-                        </p>
+                        </div>
 
                     </div>
 
@@ -301,35 +345,28 @@
 
                 <div class="projects">
 
-
                     <article class="project-card">
 
                         <div class="project-image">
-
-                            <img src="projeto1.jpg"
-                                alt="Imagem do projeto">
-
+                            <img src="projeto1.jpg" alt="Imagem do projeto Pokédex" loading="lazy">
                         </div>
 
                         <div class="project-content">
 
-                            <h3>
-                                Projeto 01
-                            </h3>
+                            <h3>Pokédex</h3>
 
                             <p>
-                                Pokédex interativa desenvolvida com HTML, CSS e JavaScript, utilizando a PokeAPI para consultar e exibir informações dos Pokémon.
+                                Pokédex interativa desenvolvida com HTML, CSS e JavaScript, utilizando a
+                                PokeAPI para consultar e exibir informações dos Pokémon.
                             </p>
 
                             <div class="technologies">
-
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
-
                             </div>
 
-                            <a    href="https://filipecampanele.github.io/Pokedex/" target="_blank" class="project-link">
+                            <a href="https://filipecampanele.github.io/Pokedex/" target="_blank" rel="noopener noreferrer" class="project-link">
                                 Ver projeto
                                 <i class="bi bi-arrow-up-right"></i>
                             </a>
@@ -337,68 +374,42 @@
                         </div>
 
                     </article>
-                     
-									<article class="project-card">
 
-    <div class="project-image">
+                    <article class="project-card">
 
-        <img src="calculadora.jpg" alt="Projeto Calculadora">
+                        <div class="project-image">
+                            <img src="calculadora.jpg" alt="Imagem do projeto Calculadora" loading="lazy">
+                        </div>
 
-    </div>
+                        <div class="project-content">
 
-    <div class="project-content">
+                            <h3>Calculadora</h3>
 
-        <h3>
-            Calculadora
-        </h3>
+                            <p>
+                                Calculadora interativa desenvolvida com React, permitindo realizar
+                                operações matemáticas de forma simples e dinâmica.
+                            </p>
 
-        <p>
-            Calculadora interativa desenvolvida com React,
-            permitindo realizar operações matemáticas de forma
-            simples e dinâmica.
-        </p>
+                            <div class="technologies">
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>CSS</span>
+                            </div>
 
-        <div class="technologies">
+                            <a href="https://filipecampanele.github.io/Calculadora/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Ver projeto
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
 
-            <span class="technology">
-                
-                JavaScript
-            </span>
+                        </div>
 
-            <span class="technology">
-                React
-            </span>
+                    </article>
 
-            <span class="technology">
-                CSS
-            </span>
-
-        </div>
-
-        <a href="https://filipecampanele.github.io/Calculadora/"
-           target="_blank"
-           class="project-link">
-
-            Ver projeto
-            <i class="bi bi-arrow-up-right"></i>
-
-        </a>
-
-    </div>
-
-										 </article>
                 </div>
+
             </div>
 
-          
-
-
-					
         </section>
-
-
-
-
 
 
         <!-- CONTATO -->
@@ -448,7 +459,7 @@
                         </a>
 
 
-                        <a href="https://github.com/filipecampanele?tab=repositories" target="_blank">
+                        <a href="https://github.com/filipecampanele?tab=repositories" target="_blank" rel="noopener noreferrer">
 
                             <i class="bi bi-github"></i>
 
@@ -462,7 +473,7 @@
                         </a>
 
 
-                        <a href="https://www.linkedin.com/in/filipe-campanele-176061417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                        <a href="https://www.linkedin.com/in/filipe-campanele-176061417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
 
                             <i class="bi bi-linkedin"></i>
 
@@ -496,15 +507,14 @@
 
     </footer>
 
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
 
     <!-- JAVASCRIPT -->
     <script src="Portifólio.js"></script>
 
 </body>
 
-</html>                                        
-                      
-
-                
-
-
+</html>
